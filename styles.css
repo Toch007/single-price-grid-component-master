@@ -107,6 +107,10 @@ button {
     font-family: inherit;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .right {
     background-color: var(--Cyan);
     padding: 2.3rem;
