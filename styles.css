@@ -1,0 +1,144 @@
+:root {
+    --Cyan: hsl(179, 51%, 44%);
+    --CyanDark: hsl(179, 60%, 37%);
+    --BrightYellow: hsl(71, 73%, 54%);
+
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+html {
+    font-family: karla, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--LightGray);
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    align-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 650px;
+    display: grid;
+    overflow: hidden;
+    border-radius: 10px;
+    grid-template-columns: (2, 1fr);
+
+}
+
+.top {
+    grid-column: 1 / span 2;
+    background-color: #fff;
+    padding: 2.5rem;
+}
+
+.top h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--CyanDark)
+}
+
+.top h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.8rem;
+    color: var(--BrightYellow);
+}
+
+.top p {
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+}
+
+.left {
+    padding: 2.4rem 0 1.5rem 2.4rem;
+    background-color: var(--CyanDark);
+    color: #fff;
+}
+
+.left h2 {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.price {
+    color: hsl(179, 39%, 69%);
+}
+
+.price span {
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding-right: 0.75rem;
+    color: #fff;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.left p:nth-of-type(2) {
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    opacity: 0.7;
+}
+
+button {
+    margin-top: 1.7rem;
+    background-color: var(--BrightYellow);
+    width: 90%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    padding: 1.05rem 0;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.right {
+    background-color: var(--Cyan);
+    padding: 2.3rem;
+    color: #fff;
+}
+
+.right h2 {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.right ul {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    padding: 0;
+    opacity: 0.7;
+}
+
+.right ul li {
+    list-style-type: none;
+
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 20px;
+        height: unset;
+    }
+
+    .top {
+        grid-column: unset;
+    }
+}
